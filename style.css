@@ -48,7 +48,7 @@ th, td {
     justify-content: center;
     border-radius: 15px;
     width: 300px;
-    height: 150px;
+    height: auto;
     border: solid 2px white;
     margin: 4px;
 

@@ -22,7 +22,11 @@ const shipGenerator = function(listado_de_naves){
         const listita = document.createElement('ul')
         const item = document.createElement('li')
         const item_uno = document.createElement('li')
-    
+        for (const atributo_nave in ship) {
+            const item_for = document.createElement('li')
+            item_for.innerText = `${atributo_nave}: ${ship[atributo_nave]}`
+            listita.appendChild(item_for)
+        }
         item_uno.classList.add("designation")
         const item_dos = document.createElement('li')
         h6.innerText = ship.id
